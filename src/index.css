@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #FFF4DE;
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 206, 216, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: #F48B9B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E15B70;
+}
+
+/* Legal draft document paper texture & margin styling */
+.legal-document {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.8;
+  color: #0f172a;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(244, 139, 155, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(244, 139, 155, 0.8);
+  }
+}
+
+.mascot-pulse {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
